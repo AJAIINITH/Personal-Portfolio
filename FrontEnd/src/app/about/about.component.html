@@ -1,0 +1,12 @@
+<div class="aboutbackground">
+ <h1>About Me</h1>
+ <ul>
+   <ng-container *ngFor="let about of aboutme">
+     <li class="color">
+      <div class="date">{{about.date}}</div>
+      <div class="title">{{about.title}}</div>
+      <div class="descr">{{about.description}}</div>
+     </li>
+   </ng-container>    
+ </ul>
+</div>

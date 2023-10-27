@@ -1,0 +1,23 @@
+<div class="background">
+  <h1>Featured Projects</h1>
+  <swiper-container>   
+    <ng-container *ngFor="let project of projects">
+      <swiper-slide>
+        <div class="container">
+         <div class="card bg-dark">
+           <div class="img-wrapper">
+            <img src="{{project.src}}">
+            </div>
+            <div class="card-body text-center">
+            <h4 class="card-title">{{project.title}}</h4>
+            <p>{{project.description}}</p>
+            <p>Tech Stack Used:
+            <span>{{project.tech}}</span></p>
+            <a class="btn" href="{{project.link}}" target="_blank">View Code Repository</a>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+    </ng-container>
+  </swiper-container>
+</div>
